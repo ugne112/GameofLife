@@ -26,24 +26,3 @@ Build Instructions
 ------------------
 
 Build and run instructions are left as an excercise for the student. Examples of how to build using cmake were given in lectures and in the other CMake example projects. 
-
-Build Docker Image:
-docker build -t container .
-
-Run docker container for the first time:
-docker run -it --name container -v "$(pwd)":/container container
-
-Restart the container:
-docker -i test
-
-Once Inside the container navigate to build:
-cd build 
-And Run:
-cmake ../
-to build the Makefile. After that execute:
-make
-This will make all the binary files and you will get all the executables in build/bin.
-Run the tests or the Command Line apps from there.
-
-Run tests for Part A Q2:
-./bin/gridTest

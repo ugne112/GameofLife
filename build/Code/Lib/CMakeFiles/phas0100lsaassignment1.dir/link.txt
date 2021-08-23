@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libphas0100lsaassignment1.a  CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o CMakeFiles/phas0100lsaassignment1.dir/golMyFunctions.cpp.o CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.o
+/usr/bin/ranlib ../../bin/libphas0100lsaassignment1.a
