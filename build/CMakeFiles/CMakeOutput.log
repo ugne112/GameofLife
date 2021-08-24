@@ -507,3 +507,35 @@ make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLAG_-std=c17 succeeded with the following output:
+Change Dir: /container/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1dc1a/fast && /usr/bin/make -f CMakeFiles/cmTC_1dc1a.dir/build.make CMakeFiles/cmTC_1dc1a.dir/build
+make[1]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1dc1a.dir/src.cxx.o
+/usr/bin/c++    -Wno-deprecated-declarations -DHAS_FLAG_-std=c17   -std=c++17 -o CMakeFiles/cmTC_1dc1a.dir/src.cxx.o -c /container/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_1dc1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dc1a.dir/link.txt --verbose=1
+/usr/bin/c++    -Wno-deprecated-declarations -DHAS_FLAG_-std=c17    CMakeFiles/cmTC_1dc1a.dir/src.cxx.o  -o cmTC_1dc1a 
+make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLAG_-std=c17 succeeded with the following output:
+Change Dir: /container/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1026c/fast && /usr/bin/make -f CMakeFiles/cmTC_1026c.dir/build.make CMakeFiles/cmTC_1026c.dir/build
+make[1]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1026c.dir/src.cxx.o
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17   -std=c++17 -o CMakeFiles/cmTC_1026c.dir/src.cxx.o -c /container/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_1026c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1026c.dir/link.txt --verbose=1
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17    CMakeFiles/cmTC_1026c.dir/src.cxx.o  -o cmTC_1026c 
+make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

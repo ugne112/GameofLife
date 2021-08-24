@@ -14,7 +14,7 @@ CostDataFile:
 Site: 9cbb880d5f0d
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-c++
+BuildName: PHAS0100LSAASSIGNMENT1
 
 # Subprojects
 LabelsForSubprojects: 
