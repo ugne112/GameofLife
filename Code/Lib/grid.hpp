@@ -1,8 +1,10 @@
 #ifndef CELLSTATUS_HPP
 #define CELLSTATUS_HPP
 #include <iostream>
-#include <string>
 #include <vector>
+#include <sstream>
+#include <string>
+#include <fstream>
 
 
 class Grid
@@ -17,6 +19,7 @@ class Grid
     public:
         Grid(int rows, int columns);
         Grid(int rows, int columns, int liveCells);
+        Grid(std::string filename);
         char getStatus(int row, int column); //get status of cell
         void setStatus(int row, int column, char status);
         void printGrid(); 

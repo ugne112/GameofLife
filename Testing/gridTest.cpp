@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+// Part A
 // Q2
 TEST_CASE( "Check Grid is instantiated" ) 
 {
@@ -32,3 +33,12 @@ TEST_CASE( "Check alive cells are set randomly" )
   REQUIRE(alive_cells == 20);
 }
 
+// Q4
+TEST_CASE("Read and print text files")
+{
+  Grid g = Grid("../Testing/Data/glider.txt");
+  Grid g1 = Grid("../Testing/Data/oscillators.txt");
+  Grid g2 = Grid("../Testing/Data/still_lifes.txt");
+  
+  // REQUIRE();
+}
