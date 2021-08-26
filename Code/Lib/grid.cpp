@@ -41,7 +41,7 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells) //initially all cells 
 }
 
 
-Grid::Grid(std::string filename) // reading from file
+Grid::Grid(std::string filename) // reading from text file
 {
     std::ifstream myFile;
     std::string line;
@@ -49,13 +49,17 @@ Grid::Grid(std::string filename) // reading from file
     grid.clear();
     myFile.open(filename, std::ios::in);
     //cout << "File name from grid.cpp : " << fileName << endl;
-    if(myFile.is_open()){
+    if(myFile.is_open())
+    {
         rows = 0;
-        while(getline(myFile, line)){
+        while(getline(myFile, line))
+        {
             //cout << line << endl;
             columns = 0;
-            for(int i=0; i<line.length();i++){
-                if(line[i] != ' '){
+            for(int i=0; i<line.length();i++)
+            {
+                if(line[i] != ' ')
+                {
                     initGrid.push_back(line[i]);
                     columns++;
                 }
@@ -71,6 +75,39 @@ Grid::Grid(std::string filename) // reading from file
 
 }
 
+int Grid::liveNeighbours(int row, int column)
+    {
+        int neighbours = 0;
+        // Top row
+        if (row - 1 >= 0)
+        {
+            if (column - 1 >= 0 && abs(grid[row - 1][column - 1]) == 'o')
+                neighbours++;
+            if (abs(grid[row - 1][column]) == 'o')
+                neighbours++;
+            if (column + 1 < grid[row - 1].size() && abs(grid[row - 1][column + 1]) == 'o')
+            {
+                neighbours++;
+            }
+        }
+        // The sides
+        if (column - 1 >= 0 && abs(grid[row][column - 1]) == 'o')
+            neighbours++;
+        if (column + 1 < grid[row].size() && abs(grid[row][column + 1]) == 'o')
+            neighbours++;
+
+        // The bottom row
+        if (row + 1 < grid.size())
+        {
+            if (column - 1 >= 0 && abs(grid[row + 1][column - 1]) == 'o')
+                neighbours++;
+            if (grid[row + 1][column] == 'o')
+                neighbours++;
+            if (column + 1 < grid[row].size() && abs(grid[row + 1][column + 1]) == 'o')
+                neighbours++;
+        }
+        return neighbours;
+    }
 
 
 char Grid::getStatus(int row, int column) //get status (dead or alive) of cell

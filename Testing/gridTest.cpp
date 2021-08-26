@@ -3,7 +3,7 @@
 #include "../Code/Lib/grid.hpp"
 #include <iostream>
 #include <vector>
-
+/*
 // Part A
 // Q2
 TEST_CASE( "Check Grid is instantiated" ) 
@@ -32,13 +32,25 @@ TEST_CASE( "Check alive cells are set randomly" )
   }
   REQUIRE(alive_cells == 20);
 }
+*/
 
 // Q4
 TEST_CASE("Read and print text files")
 {
   Grid g = Grid("../Testing/Data/glider.txt");
-  Grid g1 = Grid("../Testing/Data/oscillators.txt");
-  Grid g2 = Grid("../Testing/Data/still_lifes.txt");
+  // Grid g1 = Grid("../Testing/Data/oscillators.txt");
+ // Grid g2 = Grid("../Testing/Data/still_lifes.txt");
   
   // REQUIRE();
-}
+} 
+
+// Q5
+
+TEST_CASE("Count Live Neighbours of a cell")
+{
+  Grid g1 = Grid("../Testing/Data/glider.txt");
+  
+  REQUIRE(g1.liveNeighbours(1, 2) == 1);
+  REQUIRE(g1.liveNeighbours(2, 2) == 3);
+} 
+
