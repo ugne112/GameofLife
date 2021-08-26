@@ -109,12 +109,26 @@ Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.s"
 	cd /container/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /container/Code/Lib/grid.cpp -o CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.s
 
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/flags.make
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o: ../Code/Lib/golClass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/container/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o"
+	cd /container/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o -c /container/Code/Lib/golClass.cpp
+
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.i"
+	cd /container/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /container/Code/Lib/golClass.cpp > CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.i
+
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.s"
+	cd /container/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /container/Code/Lib/golClass.cpp -o CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.s
+
 # Object files for target phas0100lsaassignment1
 phas0100lsaassignment1_OBJECTS = \
 "CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o" \
 "CMakeFiles/phas0100lsaassignment1.dir/golMyFunctions.cpp.o" \
 "CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o" \
-"CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.o"
+"CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.o" \
+"CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o"
 
 # External object files for target phas0100lsaassignment1
 phas0100lsaassignment1_EXTERNAL_OBJECTS =
@@ -123,9 +137,10 @@ bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/
 bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golMyFunctions.cpp.o
 bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o
 bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.o
+bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o
 bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/build.make
 bin/libphas0100lsaassignment1.a: Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/container/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../bin/libphas0100lsaassignment1.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/container/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../bin/libphas0100lsaassignment1.a"
 	cd /container/build/Code/Lib && $(CMAKE_COMMAND) -P CMakeFiles/phas0100lsaassignment1.dir/cmake_clean_target.cmake
 	cd /container/build/Code/Lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phas0100lsaassignment1.dir/link.txt --verbose=$(VERBOSE)
 

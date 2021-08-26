@@ -209,6 +209,33 @@ golBasicTypes.cpp.s:
 	cd /container/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/build.make Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.s
 .PHONY : golBasicTypes.cpp.s
 
+golClass.o: golClass.cpp.o
+
+.PHONY : golClass.o
+
+# target to build an object file
+golClass.cpp.o:
+	cd /container/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/build.make Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o
+.PHONY : golClass.cpp.o
+
+golClass.i: golClass.cpp.i
+
+.PHONY : golClass.i
+
+# target to preprocess a source file
+golClass.cpp.i:
+	cd /container/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/build.make Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.i
+.PHONY : golClass.cpp.i
+
+golClass.s: golClass.cpp.s
+
+.PHONY : golClass.s
+
+# target to generate assembly for a file
+golClass.cpp.s:
+	cd /container/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/build.make Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.s
+.PHONY : golClass.cpp.s
+
 golException.o: golException.cpp.o
 
 .PHONY : golException.o
@@ -307,6 +334,9 @@ help:
 	@echo "... golBasicTypes.o"
 	@echo "... golBasicTypes.i"
 	@echo "... golBasicTypes.s"
+	@echo "... golClass.o"
+	@echo "... golClass.i"
+	@echo "... golClass.s"
 	@echo "... golException.o"
 	@echo "... golException.i"
 	@echo "... golException.s"

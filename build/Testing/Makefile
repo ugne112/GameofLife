@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Testing/CMakeFiles/golClassTest.dir/rule:
+	cd /container/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/golClassTest.dir/rule
+.PHONY : Testing/CMakeFiles/golClassTest.dir/rule
+
+# Convenience name for target.
+golClassTest: Testing/CMakeFiles/golClassTest.dir/rule
+
+.PHONY : golClassTest
+
+# fast build rule for target.
+golClassTest/fast:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/build
+.PHONY : golClassTest/fast
+
+# Convenience name for target.
 Testing/CMakeFiles/gridTest.dir/rule:
 	cd /container/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/gridTest.dir/rule
 .PHONY : Testing/CMakeFiles/gridTest.dir/rule
@@ -230,6 +245,7 @@ golCatchMain.o: golCatchMain.cpp.o
 
 # target to build an object file
 golCatchMain.cpp.o:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golCatchMain.cpp.o
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/gridTest.dir/build.make Testing/CMakeFiles/gridTest.dir/golCatchMain.cpp.o
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.o
 .PHONY : golCatchMain.cpp.o
@@ -240,6 +256,7 @@ golCatchMain.i: golCatchMain.cpp.i
 
 # target to preprocess a source file
 golCatchMain.cpp.i:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golCatchMain.cpp.i
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/gridTest.dir/build.make Testing/CMakeFiles/gridTest.dir/golCatchMain.cpp.i
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.i
 .PHONY : golCatchMain.cpp.i
@@ -250,9 +267,37 @@ golCatchMain.s: golCatchMain.cpp.s
 
 # target to generate assembly for a file
 golCatchMain.cpp.s:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golCatchMain.cpp.s
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/gridTest.dir/build.make Testing/CMakeFiles/gridTest.dir/golCatchMain.cpp.s
 	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.s
 .PHONY : golCatchMain.cpp.s
+
+golClassTest.o: golClassTest.cpp.o
+
+.PHONY : golClassTest.o
+
+# target to build an object file
+golClassTest.cpp.o:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golClassTest.cpp.o
+.PHONY : golClassTest.cpp.o
+
+golClassTest.i: golClassTest.cpp.i
+
+.PHONY : golClassTest.i
+
+# target to preprocess a source file
+golClassTest.cpp.i:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golClassTest.cpp.i
+.PHONY : golClassTest.cpp.i
+
+golClassTest.s: golClassTest.cpp.s
+
+.PHONY : golClassTest.s
+
+# target to generate assembly for a file
+golClassTest.cpp.s:
+	cd /container/build && $(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/golClassTest.cpp.s
+.PHONY : golClassTest.cpp.s
 
 gridTest.o: gridTest.cpp.o
 
@@ -289,6 +334,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... golClassTest"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
@@ -302,6 +348,9 @@ help:
 	@echo "... golCatchMain.o"
 	@echo "... golCatchMain.i"
 	@echo "... golCatchMain.s"
+	@echo "... golClassTest.o"
+	@echo "... golClassTest.i"
+	@echo "... golClassTest.s"
 	@echo "... gridTest.o"
 	@echo "... gridTest.i"
 	@echo "... gridTest.s"

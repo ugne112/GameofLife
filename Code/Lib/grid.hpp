@@ -1,5 +1,5 @@
-#ifndef CELLSTATUS_HPP
-#define CELLSTATUS_HPP
+#ifndef GRID_HPP
+#define GRID_HPP
 #include <iostream>
 #include <vector>
 #include <sstream>
@@ -27,6 +27,5 @@ class Grid
         void setStatus(int row, int column, char status);
         void printGrid(); 
 };
-
 
 #endif

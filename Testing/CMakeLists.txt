@@ -19,6 +19,7 @@ set(TEST_CASES
   golBasicTest
   # golCommandLineArgsTest
   gridTest
+  golClassTest
 )
 
 foreach(_test_case ${TEST_CASES})

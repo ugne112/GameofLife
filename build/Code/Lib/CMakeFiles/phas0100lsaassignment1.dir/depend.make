@@ -5,6 +5,10 @@ Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o: ../Code/Lib/
 Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o: ../Code/Lib/golBasicTypes.h
 Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o: ../Code/Lib/golWin32ExportHeader.h
 
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o: ../Code/Lib/golClass.cpp
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o: ../Code/Lib/golClass.hpp
+Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o: ../Code/Lib/grid.hpp
+
 Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o: ../Code/Lib/golException.cpp
 Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o: ../Code/Lib/golException.h
 Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o: ../Code/Lib/golWin32ExportHeader.h

@@ -677,3 +677,39 @@ make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLAG_-std=c17 succeeded with the following output:
+Change Dir: /container/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd926/fast && make[1]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bd926.dir/build.make CMakeFiles/cmTC_bd926.dir/build
+make[2]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd926.dir/src.cxx.o
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17   -std=c++17 -o CMakeFiles/cmTC_bd926.dir/src.cxx.o -c /container/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_bd926
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd926.dir/link.txt --verbose=1
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17    CMakeFiles/cmTC_bd926.dir/src.cxx.o  -o cmTC_bd926 
+make[2]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLAG_-std=c17 succeeded with the following output:
+Change Dir: /container/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e296b/fast && make[1]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e296b.dir/build.make CMakeFiles/cmTC_e296b.dir/build
+make[2]: Entering directory '/container/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e296b.dir/src.cxx.o
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17   -std=c++17 -o CMakeFiles/cmTC_e296b.dir/src.cxx.o -c /container/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_e296b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e296b.dir/link.txt --verbose=1
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c17    CMakeFiles/cmTC_e296b.dir/src.cxx.o  -o cmTC_e296b 
+make[2]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/container/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../bin/libphas0100lsaassignment1.a"
   "../../bin/libphas0100lsaassignment1.pdb"
   "CMakeFiles/phas0100lsaassignment1.dir/golBasicTypes.cpp.o"
+  "CMakeFiles/phas0100lsaassignment1.dir/golClass.cpp.o"
   "CMakeFiles/phas0100lsaassignment1.dir/golException.cpp.o"
   "CMakeFiles/phas0100lsaassignment1.dir/golMyFunctions.cpp.o"
   "CMakeFiles/phas0100lsaassignment1.dir/grid.cpp.o"

@@ -19,6 +19,7 @@ set(PHAS0100LSAASSIGNMENT1_LIBRARY_SRCS
   golMyFunctions.cpp
   golException.cpp
   grid.cpp
+  golClass.cpp
 )
 
 set(PHAS0100LSAASSIGNMENT1_LIBRARY_HDRS

@@ -58,6 +58,7 @@
 /container/build/Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir
 /container/build/Testing/CMakeFiles/install/strip.dir
 /container/build/Testing/CMakeFiles/install/local.dir
+/container/build/Testing/CMakeFiles/golClassTest.dir
 /container/build/Testing/CMakeFiles/install.dir
 /container/build/Testing/CMakeFiles/list_install_components.dir
 /container/build/Testing/CMakeFiles/rebuild_cache.dir

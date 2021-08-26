@@ -558,6 +558,19 @@ golMyFirstApp/fast:
 .PHONY : golMyFirstApp/fast
 
 #=============================================================================
+# Target rules for targets named golClassTest
+
+# Build rule for target.
+golClassTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 golClassTest
+.PHONY : golClassTest
+
+# fast build rule for target.
+golClassTest/fast:
+	$(MAKE) -f Testing/CMakeFiles/golClassTest.dir/build.make Testing/CMakeFiles/golClassTest.dir/build
+.PHONY : golClassTest/fast
+
+#=============================================================================
 # Target rules for targets named gridTest
 
 # Build rule for target.
@@ -626,6 +639,7 @@ help:
 	@echo "... ContinuousSubmit"
 	@echo "... phas0100lsaassignment1"
 	@echo "... golMyFirstApp"
+	@echo "... golClassTest"
 	@echo "... gridTest"
 	@echo "... golBasicTest"
 .PHONY : help
