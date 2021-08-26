@@ -5,8 +5,13 @@
 #include <fstream>
 #include "grid.hpp"
 
+// a hyphen '-' represents a dead cell
+// an 'o' represents a live cell
 
-Grid::Grid(int theRows, int theColumns) //initially all cells are set as dead
+
+// Constructors for grid specs set by user
+
+Grid::Grid(int theRows, int theColumns) // initially all cells are set as dead
 {
     rows = theRows;
     columns = theColumns;
@@ -14,7 +19,8 @@ Grid::Grid(int theRows, int theColumns) //initially all cells are set as dead
     
 }
 
-Grid::Grid(int theRows, int theColumns, int theLiveCells) //initially all cells are set as dead
+Grid::Grid(int theRows, int theColumns, int theLiveCells) 
+// given number of live cells are set randomly across grid
 {
     rows = theRows;
     columns = theColumns;
@@ -23,15 +29,15 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells) //initially all cells 
     int x = 0;
     
     //change to for loop?
-    while (x < theLiveCells) // while loop to set alive cells as indicated by user 
+    while (x < theLiveCells) // while loop for live cells as indicated by user 
     {
         int i = std::rand() % theRows;
         int j = std::rand() % theColumns;
             
-        if (grid[i][j] == 'o') // if loop to prevent setting one cell alive twice
+        if (grid[i][j] == 'o') // if statement to prevent setting one cell alive more than once
         {
         }
-        else
+        else // a dead cell is set to be live
         {
             setStatus(i, j, 'o');
             x++;
@@ -40,21 +46,21 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells) //initially all cells 
         
 }
 
+// Constructor for reading the grid from a text file
 
-Grid::Grid(std::string filename) // reading from text file
+Grid::Grid(std::string filename) 
 {
     std::ifstream myFile;
     std::string line;
     std::vector <char> initGrid;
     grid.clear();
     myFile.open(filename, std::ios::in);
-    //cout << "File name from grid.cpp : " << fileName << endl;
+    
     if(myFile.is_open())
     {
         rows = 0;
         while(getline(myFile, line))
         {
-            //cout << line << endl;
             columns = 0;
             for(int i=0; i<line.length();i++)
             {
@@ -68,17 +74,18 @@ Grid::Grid(std::string filename) // reading from text file
             initGrid.clear();
             rows++;
         }
-        //cout << "rows = " << rows << endl;
         myFile.close();
         printGrid();
     }
 
 }
 
+// Calculating live neighbours of each cell
+
 int Grid::liveNeighbours(int row, int column)
     {
         int neighbours = 0;
-        // Top row
+        // Row above the cell
         if (row - 1 >= 0)
         {
             if (column - 1 >= 0 && abs(grid[row - 1][column - 1]) == 'o')
@@ -90,13 +97,13 @@ int Grid::liveNeighbours(int row, int column)
                 neighbours++;
             }
         }
-        // The sides
+        // The cells on left and right side of given cell
         if (column - 1 >= 0 && abs(grid[row][column - 1]) == 'o')
             neighbours++;
         if (column + 1 < grid[row].size() && abs(grid[row][column + 1]) == 'o')
             neighbours++;
 
-        // The bottom row
+        // Row below the cell
         if (row + 1 < grid.size())
         {
             if (column - 1 >= 0 && abs(grid[row + 1][column - 1]) == 'o')
@@ -109,14 +116,23 @@ int Grid::liveNeighbours(int row, int column)
         return neighbours;
     }
 
+int Grid::getRows() 
+{
+    return rows;
+}
 
-char Grid::getStatus(int row, int column) //get status (dead or alive) of cell
+int Grid::getColumns() 
+{
+    return columns;
+}
+
+char Grid::getStatus(int row, int column) // get status (dead or alive) of cell
 {
     return grid[row][column];
 }
 
 
-void Grid::setStatus(int row, int column, char status) //set status (dead or alive) of each cell
+void Grid::setStatus(int row, int column, char status) // set status (dead or alive) of each cell
 {
     grid[row][column] = status;
 }
