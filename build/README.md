@@ -45,5 +45,14 @@ make
 This will make all the binary files and you will get all the executables in build/bin.
 Run the tests or the Command Line apps from there.
 
-Run tests for Part A Q2:
+Run tests for Part A:
 ./bin/gridTest
+
+Run tests for Part B:
+./bin/golTest
+
+Run Game Of Life Simulator app from input text file:
+./bin/golSimulator Game -f file.txt nbGenerations
+
+Run Game Of Life Simulator app by initialising the grid from user input:
+./bin/golSimulator <rows> <columns> <no. of life cells>

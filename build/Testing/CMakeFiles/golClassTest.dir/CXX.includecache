@@ -420,12 +420,6 @@ ctime
 algorithm
 -
 
-/container/Testing/golCatchMain.cpp
-catch.hpp
-/container/Testing/catch.hpp
-golCatchMain.h
-/container/Testing/golCatchMain.h
-
 /container/Testing/golCatchMain.h
 
 /container/Testing/golClassTest.cpp

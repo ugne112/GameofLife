@@ -43,7 +43,7 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells)
             x++;
         }
     }
-        
+    printGrid();     
 }
 
 // Constructor for reading the grid from a text file
