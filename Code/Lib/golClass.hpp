@@ -1,3 +1,5 @@
+#ifndef GOLCLASS_HPP
+#define GOLCLASS_HPP
 #include <iostream>
 #include <vector>
 #include <sstream>
@@ -17,3 +19,4 @@ class GameOfLife
 
 };
 
+#endif

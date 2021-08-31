@@ -48,8 +48,11 @@ Run the tests or the Command Line apps from there.
 Run tests for Part A:
 ./bin/gridTest
 
-Run tests for Part B:
+Run test for Part B:
 ./bin/golTest
+
+Run Game Of Life Simulator app:
+./bin/golSimulator
 
 Run Game Of Life Simulator app from input text file:
 ./bin/golSimulator -f <location/file.txt> <number_of_generations>
