@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/container/Code/Lib/golClass.cpp
+golClass.hpp
+/container/Code/Lib/golClass.hpp
+
+/container/Code/Lib/golClass.hpp
+iostream
+-
+vector
+-
+sstream
+-
+string
+-
+fstream
+-
+grid.hpp
+/container/Code/Lib/grid.hpp
+
 /container/Code/Lib/grid.cpp
 iostream
 -

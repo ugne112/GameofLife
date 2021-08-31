@@ -69,7 +69,6 @@ int main(int argc, char** argv)
             {
                 Grid boardGrid = Grid(std::stoi(params[0]), std::stoi(params[1]), std::stoi(params[2]));
                 GameOfLife game = GameOfLife(boardGrid);
-                GameOfLife game2 = game;
                 game.takeStep();
                 game.printGrid();
                 std::cout << "New grid + takeStep.\n"; 

@@ -82,12 +82,15 @@ int main(int argc, char** argv)
             GameOfLife game = GameOfLife(board);
             int noGenerations = std::stoi(params.back()); // last member is the number of generations
 
-            for(int i=0; i< noGenerations; i++){ // Walking through generation
+            for(int i=0; i< noGenerations; i++) // Walking through generation
+            { 
+                std::cout << "Take step\n"; 
+                std::cout << std::endl;
                 game.takeStep();
                 game.printGrid();
                 std::this_thread::sleep_for (std::chrono::seconds(1));
+                std::cout << std::endl;
             }
-            std::cout << "Lift off!\n"; 
         }
         
         else if(params.size() == 4) // Input indicated by user and live cells placed randomly
@@ -97,11 +100,13 @@ int main(int argc, char** argv)
             int noGenerations = std::stoi(params.back()); // last member is the number of generations
             for(int i=0; i< noGenerations; i++) // Walking through generation
             {
+                std::cout << "Take step\n"; 
+                std::cout << std::endl;
                 game.takeStep();
                 game.printGrid();
                 std::this_thread::sleep_for (std::chrono::seconds(1));
+                std::cout << std::endl;
             }
-            std::cout << "Lift off!\n"; 
         }
 
         returnStatus = EXIT_SUCCESS;
