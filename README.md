@@ -49,7 +49,7 @@ Run tests for Part A:
 ./bin/gridTest
 
 Run test for Part B:
-./bin/golTest
+./bin/golClassTest
 
 Run Game Of Life Simulator app:
 ./bin/golSimulator
