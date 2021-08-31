@@ -95,8 +95,8 @@ int main(int argc, char** argv)
         
         else if(params.size() == 4) // Input indicated by user and live cells placed randomly
         { 
-            Grid boardGrid = Grid(std::stoi(params[0]), std::stoi(params[1]), std::stoi(params[2]));
-            GameOfLife game = GameOfLife(boardGrid);
+            Grid board = Grid(std::stoi(params[0]), std::stoi(params[1]), std::stoi(params[2]));
+            GameOfLife game = GameOfLife(board);
             int noGenerations = std::stoi(params.back()); // last member is the number of generations
             for(int i=0; i< noGenerations; i++) // Walking through generation
             {

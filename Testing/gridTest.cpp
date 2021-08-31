@@ -37,9 +37,9 @@ TEST_CASE( "Check alive cells are set randomly" )
 TEST_CASE( "Confirm different instances generate different patterns" ) 
 {
   std::cout << "Printing different instances to check for different patterns \n";
-  Grid g = Grid(5, 5, 5);
-  Grid e = Grid(5, 5, 5);
-  Grid f = Grid(5, 5, 5);
+  Grid g = Grid(4, 4, 4);
+  Grid e = Grid(4, 4, 4);
+  Grid f = Grid(4, 4, 4);
   // REQUIRE();
 }
 

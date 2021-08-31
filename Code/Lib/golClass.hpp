@@ -11,7 +11,7 @@ class GameOfLife
     private:
         Grid board;
     public:
-        GameOfLife(Grid);
+        GameOfLife(Grid board);
         void takeStep();
         void printGrid();
 

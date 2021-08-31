@@ -29,6 +29,7 @@ void GameOfLife::takeStep()
     board = board2;
 } 
 
+
 void GameOfLife::printGrid()
 {
     board.printGrid();
