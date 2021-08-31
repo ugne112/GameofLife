@@ -15,7 +15,7 @@ static void show_usage(std::string name)
     std::cerr << "Usage: " << name << " <option(s)> SOURCES \n"
          << "Options:\n"
          << "\t-h,--help\t\tShow help message\n"
-         << "\t-f,--file \t\tSpecify: file name; number of generations.\n"
+         << "\t-f,--file \t\tSpecify: location/file name; number of generations.\n"
          << "\t-r,--random \t\tSpecify: number of rows; number of columns; number of initial live cells; number of generations.\n"
          << std::endl;
 }
