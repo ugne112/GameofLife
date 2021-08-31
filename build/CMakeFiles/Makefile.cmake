@@ -108,6 +108,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "Code/Lib/CMakeFiles/phas0100lsaassignment1.dir/DependInfo.cmake"
   "Code/CommandLineApps/CMakeFiles/golSimulator.dir/DependInfo.cmake"
+  "Code/CommandLineApps/CMakeFiles/stillLifes.dir/DependInfo.cmake"
   "Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/DependInfo.cmake"
   "Testing/CMakeFiles/golClassTest.dir/DependInfo.cmake"
   "Testing/CMakeFiles/gridTest.dir/DependInfo.cmake"

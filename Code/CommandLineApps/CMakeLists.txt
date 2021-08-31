@@ -15,6 +15,7 @@
 set(_command_line_apps
   golMyFirstApp
   golSimulator
+  stillLifes
 )
 
 foreach(_app ${_command_line_apps})

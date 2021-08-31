@@ -19,6 +19,7 @@ Grid::Grid(int theRows, int theColumns) // initially all cells are set as dead
     
 }
 
+
 Grid::Grid(int theRows, int theColumns, int theLiveCells) 
 // given number of live cells are set randomly across grid
 {
@@ -28,7 +29,7 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells)
     liveCells = theLiveCells;
     int x = 0;
     
-    //change to for loop?
+   
     while (x < theLiveCells) // while loop for live cells as indicated by user 
     {
         int i = std::rand() % theRows;
@@ -45,6 +46,9 @@ Grid::Grid(int theRows, int theColumns, int theLiveCells)
     }
     printGrid();     
 }
+
+
+
 
 // Constructor for reading the grid from a text file
 

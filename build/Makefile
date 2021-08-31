@@ -558,6 +558,19 @@ golSimulator/fast:
 .PHONY : golSimulator/fast
 
 #=============================================================================
+# Target rules for targets named stillLifes
+
+# Build rule for target.
+stillLifes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stillLifes
+.PHONY : stillLifes
+
+# fast build rule for target.
+stillLifes/fast:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/stillLifes.dir/build.make Code/CommandLineApps/CMakeFiles/stillLifes.dir/build
+.PHONY : stillLifes/fast
+
+#=============================================================================
 # Target rules for targets named golMyFirstApp
 
 # Build rule for target.
@@ -652,6 +665,7 @@ help:
 	@echo "... ContinuousSubmit"
 	@echo "... phas0100lsaassignment1"
 	@echo "... golSimulator"
+	@echo "... stillLifes"
 	@echo "... golMyFirstApp"
 	@echo "... golClassTest"
 	@echo "... gridTest"

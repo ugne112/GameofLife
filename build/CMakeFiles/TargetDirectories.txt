@@ -56,6 +56,7 @@
 /container/build/Code/CommandLineApps/CMakeFiles/edit_cache.dir
 /container/build/Code/CommandLineApps/CMakeFiles/test.dir
 /container/build/Code/CommandLineApps/CMakeFiles/golSimulator.dir
+/container/build/Code/CommandLineApps/CMakeFiles/stillLifes.dir
 /container/build/Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir
 /container/build/Testing/CMakeFiles/install/strip.dir
 /container/build/Testing/CMakeFiles/install/local.dir

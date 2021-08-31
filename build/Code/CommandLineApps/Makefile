@@ -183,6 +183,21 @@ golSimulator/fast:
 .PHONY : golSimulator/fast
 
 # Convenience name for target.
+Code/CommandLineApps/CMakeFiles/stillLifes.dir/rule:
+	cd /container/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/stillLifes.dir/rule
+.PHONY : Code/CommandLineApps/CMakeFiles/stillLifes.dir/rule
+
+# Convenience name for target.
+stillLifes: Code/CommandLineApps/CMakeFiles/stillLifes.dir/rule
+
+.PHONY : stillLifes
+
+# fast build rule for target.
+stillLifes/fast:
+	cd /container/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/stillLifes.dir/build.make Code/CommandLineApps/CMakeFiles/stillLifes.dir/build
+.PHONY : stillLifes/fast
+
+# Convenience name for target.
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule:
 	cd /container/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule
 .PHONY : Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule
@@ -251,6 +266,33 @@ golSimulator.cpp.s:
 	cd /container/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.s
 .PHONY : golSimulator.cpp.s
 
+stillLifes.o: stillLifes.cpp.o
+
+.PHONY : stillLifes.o
+
+# target to build an object file
+stillLifes.cpp.o:
+	cd /container/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/stillLifes.dir/build.make Code/CommandLineApps/CMakeFiles/stillLifes.dir/stillLifes.cpp.o
+.PHONY : stillLifes.cpp.o
+
+stillLifes.i: stillLifes.cpp.i
+
+.PHONY : stillLifes.i
+
+# target to preprocess a source file
+stillLifes.cpp.i:
+	cd /container/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/stillLifes.dir/build.make Code/CommandLineApps/CMakeFiles/stillLifes.dir/stillLifes.cpp.i
+.PHONY : stillLifes.cpp.i
+
+stillLifes.s: stillLifes.cpp.s
+
+.PHONY : stillLifes.s
+
+# target to generate assembly for a file
+stillLifes.cpp.s:
+	cd /container/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/stillLifes.dir/build.make Code/CommandLineApps/CMakeFiles/stillLifes.dir/stillLifes.cpp.s
+.PHONY : stillLifes.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -265,6 +307,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... golSimulator"
+	@echo "... stillLifes"
 	@echo "... golMyFirstApp"
 	@echo "... golMyFirstApp.o"
 	@echo "... golMyFirstApp.i"
@@ -272,6 +315,9 @@ help:
 	@echo "... golSimulator.o"
 	@echo "... golSimulator.i"
 	@echo "... golSimulator.s"
+	@echo "... stillLifes.o"
+	@echo "... stillLifes.i"
+	@echo "... stillLifes.s"
 .PHONY : help
 
 
