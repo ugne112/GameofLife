@@ -58,10 +58,13 @@ int main(int argc, char** argv)
         }
 
     // Parameters indicated by user are used to run the simulation
+
+    // Still Lifes simulation generates multiple initial conditions and takes a step on each one
+    // The purpose is to find an initial grid that doesn't change when a step is taken
         
         if(params.size() == 4) // Input indicated by user and live cells placed randomly
         { 
-            int noGenerations = std::stoi(params.back()); // last member is the number of generations
+            int noGenerations = std::stoi(params.back()); // last member is the number of generations 
             for(int i=0; i< noGenerations; i++) // Walking through generation
             {
                 Grid boardGrid = Grid(std::stoi(params[0]), std::stoi(params[1]), std::stoi(params[2]));

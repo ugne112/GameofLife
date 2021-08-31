@@ -56,3 +56,6 @@ Run Game Of Life Simulator app from input text file:
 
 Run Game Of Life Simulator app by initialising the grid from user input:
 ./bin/golSimulator -r <number_of_rows> <number_of_columns> <number_of_live_cells> <number_of_generations>
+
+Run Still Lifes app:
+./bin/stillLifes -r <number_of_rows> <number_of_columns> <number_of_live_cells> <number_of_generations>
